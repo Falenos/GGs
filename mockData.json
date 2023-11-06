@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "email": "user1@example.com",
+      "hashed_password": "hashed_password_1"
+    },
+    {
+      "username": "user2",
+      "email": "user2@example.com",
+      "hashed_password": "hashed_password_2"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Story A",
+      "structure_type": "labyrinth",
+      "creation_date": "2023-09-01",
+      "status": "draft",
+      "price": 5.99
+    },
+    {
+      "title": "Story B",
+      "structure_type": "linear",
+      "creation_date": "2023-09-02",
+      "status": "published",
+      "price": 9.99
+    },
+    {
+      "title": "Story C",
+      "structure_type": "tree",
+      "creation_date": "2023-09-03",
+      "status": "draft",
+      "price": 6.99
+    }
+  ],
+  "pages": [
+    {
+      "title": "Page 1",
+      "content": "Page 1 Content",
+      "page_type": "starting",
+      "status": "draft"
+    },
+    {
+      "title": "Page 2",
+      "content": "Page 2 Content",
+      "page_type": "middle",
+      "status": "complete"
+    },
+    {
+      "title": "Page 3",
+      "content": "Page 3 Content",
+      "page_type": "ending",
+      "status": "draft"
+    },
+    {
+      "title": "Page 4",
+      "content": "Page 4 Content",
+      "page_type": "starting",
+      "status": "complete"
+    }
+  ],
+  "userStoryRelationships": [
+    {
+      "username": "user1",
+      "story_title": "Story A",
+      "role": "AUTHOR"
+    },
+    {
+      "username": "user1",
+      "story_title": "Story B",
+      "role": "AUTHOR"
+    },
+    {
+      "username": "user1",
+      "story_title": "Story C",
+      "role": "WRITER"
+    },
+    {
+      "username": "user2",
+      "story_title": "Story A",
+      "role": "WRITER"
+    },
+    {
+      "username": "user2",
+      "story_title": "Story B",
+      "role": "READER"
+    },
+    {
+      "username": "user2",
+      "story_title": "Story C",
+      "role": "AUTHOR"
+    }
+  ],
+  "pageStoryRelationships": [
+    {
+      "page_title": "Page 1",
+      "story_title": "Story A"
+    },
+    {
+      "page_title": "Page 2",
+      "story_title": "Story A"
+    },
+    {
+      "page_title": "Page 2",
+      "story_title": "Story B"
+    },
+    {
+      "page_title": "Page 3",
+      "story_title": "Story B"
+    },
+    {
+      "page_title": "Page 3",
+      "story_title": "Story C"
+    },
+    {
+      "page_title": "Page 4",
+      "story_title": "Story C"
+    }
+  ],
+  "userFeedback": [
+    {
+      "username": "user1",
+      "story_title": "Story A",
+      "rating": 4.5,
+      "feedback_text": "Great story!",
+      "helpfulness_score": 10,
+      "flagged_as_inappropriate": false,
+      "timestamp": "2023-09-03T10:00:00Z"
+    },
+    {
+      "username": "user2",
+      "story_title": "Story B",
+      "rating": 3.0,
+      "feedback_text": "Needs improvement.",
+      "helpfulness_score": 5,
+      "flagged_as_inappropriate": false,
+      "timestamp": "2023-09-04T11:00:00Z"
+    }
+  ],
+  "richMedia": [
+    {
+      "media_type": "image",
+      "media_url": "https://example.com/image1.jpg",
+      "description": "Image 1"
+    },
+    {
+      "media_type": "video",
+      "media_url": "https://example.com/video1.mp4",
+      "description": "Video 1"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Adventure"
+    },
+    {
+      "name": "Mystery"
+    }
+  ],
+  "links": [
+    {
+      "source_page_title": "Page 1",
+      "target_page_title": "Page 2"
+    },
+    {
+      "source_page_title": "Page 2",
+      "target_page_title": "Page 3"
+    },
+    {
+      "source_page_title": "Page 3",
+      "target_page_title": "Page 4"
+    }
+  ]
+}
