@@ -1,7 +1,7 @@
 // import StoryCard from "@/components/StoryCard";
-import { getClient } from "@/apollo/clientForServer";
+import { getClient } from "@/apollo/rscClient";
 import { Story } from "@/types";
-import { gql } from "@apollo/client";
+import { ApolloClient, NormalizedCacheObject, gql } from "@apollo/client";
 
 const GET_STORIES = gql`
   query GetStories {
@@ -13,7 +13,7 @@ const GET_STORIES = gql`
 `;
 
 export default async function Test() {
-  const client = getClient();
+  const client: ApolloClient<NormalizedCacheObject> = getClient();
   const { data } = await client.query({ query: GET_STORIES });
 
   return (
