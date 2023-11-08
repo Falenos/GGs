@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "analyze": "ANALYZE=true next build",
     "turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
@@ -15,6 +16,7 @@
     "@apollo/server": "^4.9.5",
     "@as-integrations/next": "^3.0.0",
     "@neo4j/graphql": "^4.4.1",
+    "@next/bundle-analyzer": "^14.0.1",
     "deepmerge": "^4.3.1",
     "neo4j-driver": "^5.14.0",
     "next": "14.0.1",

@@ -4,7 +4,7 @@ import { ApolloServer } from "@apollo/server";
 import { startServerAndCreateNextHandler } from "@as-integrations/next";
 import { getServerSession } from "next-auth/next";
 import { neoSchema } from "../../apollo/schema";
-import { authOptions } from "../../app/api/auth/[...nextauth]/route";
+import authOptions from "../../util/authOptions";
 
 const server = async (): Promise<ApolloServer> => {
   const schema = await neoSchema.getSchema();
